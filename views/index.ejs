@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    </head>
+    <div class="container">
+        <div class="mb-5 mx-auto">
+            <h1 class="text-center">Lista Artilheiros do Campeonato Carioca</h1>
+        </div>
+        
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Nome Jogador</th>
+                <th>Posição</th>
+                <th>Número Gols</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(var j of jogador) { %>
+                <tr>
+                    <td><%= j.nomeJogador %></td>
+                    <td><%= j.posicaoJogador %></td>
+                    <td><%= j.numeroGols %></td>
+                    <td><%= j.timeJogador %></td>
+                </tr>
+                <% } %>
+        </tbody>
+    </table>
+    </div>
+    
+</html>
